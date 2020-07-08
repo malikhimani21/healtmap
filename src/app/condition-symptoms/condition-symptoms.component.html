@@ -1,1 +1,90 @@
-<p>condition-symptoms works!</p>
+<div class="container">
+    <h2>Conditions & Symptoms</h2><br>
+
+    <p>Current</p>
+    <p type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        + Add
+    </p>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body" style="padding: 32px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <br>
+
+                    <h2 class="modal-title">Add Current Condition</h2><br>
+                    <form>
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" style="border-radius: 50px;" class="form-control"
+                                placeholder="Find Condition">
+                        </div>
+                        <br>
+
+                        <div class="form-group green-border-focus">
+                            <textarea style="background-color: #e9ecef; border: transparent;" class="form-control"
+                                id="exampleFormControlTextarea5"
+                                placeholder="Optional notes (e.g. severity and nature of condition, previous dates of occurrence)"
+                                rows="5"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" style="float: right;"
+                            data-dismiss="modal">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+ 
+    <p>Past</p>
+    <p type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalPast">
+        + Add
+    </p>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalPast">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body" style="padding: 32px;">
+                    <form>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <br>
+
+                        <h2 class="modal-title">Add Past Condition</h2><br>
+
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" style="border-radius: 50px;" class="form-control"
+                                placeholder="Find Condition">
+                        </div>
+                        <br>
+
+                        <p>When did you have this condition or symptom?</p>
+                        <mat-form-field color="accent" appearance="fill">
+                            <mat-label>mm/dd/yyyy</mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <!-- <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker> -->
+                        </mat-form-field>
+                        <br><br>
+
+                        <div class="form-group green-border-focus">
+                            <textarea style="background-color: #e9ecef; border: transparent;" class="form-control"
+                                id="exampleFormControlTextarea5"
+                                placeholder="Optional notes (e.g. severity and nature of condition, previous dates of occurrence)"
+                                rows="5"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" style="float: right;"
+                            data-dismiss="modal">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -16,6 +16,11 @@ import { LabTestsComponent } from './lab-tests/lab-tests.component';
 import { LifestyleComponent } from './lifestyle/lifestyle.component';
 import { PreferredPharmacyComponent } from './preferred-pharmacy/preferred-pharmacy.component';
 import { InsuranceComponent } from './insurance/insurance.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -38,8 +43,15 @@ import { InsuranceComponent } from './insurance/insurance.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [ 
+    MatDatepickerModule,
+    MatNativeDateModule  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
