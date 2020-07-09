@@ -39,7 +39,7 @@
     </div>
 
     <hr>
- 
+
     <p>Past</p>
     <p type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalPast">
         + Add
@@ -64,12 +64,9 @@
                         <br>
 
                         <p>When did you have this condition or symptom?</p>
-                        <mat-form-field color="accent" appearance="fill">
-                            <mat-label>mm/dd/yyyy</mat-label>
-                            <input matInput>
-                            <!-- <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                            <mat-datepicker #picker1></mat-datepicker> -->
-                        </mat-form-field>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="usr">
+                        </div>
                         <br><br>
 
                         <div class="form-group green-border-focus">

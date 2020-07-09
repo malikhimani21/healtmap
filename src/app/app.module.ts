@@ -14,15 +14,13 @@ import { TreatmentOrProceduresComponent } from './treatment-or-procedures/treatm
 import { VaccinationsComponent } from './vaccinations/vaccinations.component';
 import { LabTestsComponent } from './lab-tests/lab-tests.component';
 import { LifestyleComponent } from './lifestyle/lifestyle.component';
-import { PreferredPharmacyComponent } from './preferred-pharmacy/preferred-pharmacy.component';
-import { InsuranceComponent } from './insurance/insurance.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     AboutComponent,
@@ -35,8 +33,6 @@ import { MatNativeDateModule } from '@angular/material/core';
     VaccinationsComponent,
     LabTestsComponent,
     LifestyleComponent,
-    PreferredPharmacyComponent,
-    InsuranceComponent,
 
   ],
   imports: [

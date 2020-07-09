@@ -10,8 +10,6 @@ import { TreatmentOrProceduresComponent } from './treatment-or-procedures/treatm
 import { VaccinationsComponent } from './vaccinations/vaccinations.component'
 import { LabTestsComponent } from './lab-tests/lab-tests.component'
 import { LifestyleComponent } from './lifestyle/lifestyle.component'
-import { PreferredPharmacyComponent } from './preferred-pharmacy/preferred-pharmacy.component'
-import { InsuranceComponent } from './insurance/insurance.component'
 
 
 const routes: Routes = [
@@ -52,17 +50,9 @@ const routes: Routes = [
     component: LabTestsComponent
   },
   {
-    path: 'lifestyle',
+    path: 'lifestyle', 
     component: LifestyleComponent
-  },
-  {
-    path: 'preferredPharmacy',
-    component: PreferredPharmacyComponent
-  },
-  {
-    path: 'insurance',
-    component: InsuranceComponent
-  },
+  }
 ];
 
 @NgModule({
